@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="info-page">
+
+        <header class="nav-header">
+            <h1 class="nav-title">Portfolio</h1>
+            <button class="home-btn" onclick="window.location.href='index.html'">Home</button>
+        </header>
+
+        <div class="section-page">
+            <div class="page-section">
+                <h1 class="page-title">Projects</h1>
+                <div class="info">
+                    <h3 class="info-title">Seperate Print</h3>
+                    <h4 class="info-title">Python</h4>
+                    <div class="info-content">
+                        <div class="info-images">
+                            <img src="assets/projects/Screenshot 2025-08-14 145713.png" alt="seperateprint1" class="info-image">
+                            <img src="assets/projects/image copy 2.png" alt="seperateprint2" class="info-image">
+                        </div>
+                        <div class="info-text">
+                            <p>
+                                My printer had an issue where printing in color would cause the black ink to jam. Printing in
+                                grayscale worked fine for black text but removed all color. At first, I would manually edit PDF
+                                files to separate the colored elements from the black ones. Later, I realized I could automate
+                                this process with Python, which also gave me the chance to explore new libraries and improve
+                                my programming skills.
+                            </p>
+                            <p>
+                                The program takes a PDF file and converts it into images using the PyMuPDF library.
+                                With the help of the PIL library, it checks each pixel and copies it to either a colored version
+                                or a grayscale version. Both versions are then converted back into separate PDF files. To make
+                                the program easier to use, I built a simple GUI using the PyQt library.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3 class="info-title">Esports Website Demo</h3>
+                    <h4 class="info-title">HTML, CSS</h4>
+                    <div class="info-content reverse">
+                        <div class="info-images">
+                            <img src="assets/projects/image.png" alt="esports" class="info-image">
+                            <img src="assets/projects/image copy.png" alt="esports2" class="info-image">
+                        </div>
+                        <div class="info-text">
+                            <p>
+                                For our final project in EAPP (English for Academic and Professional Purposes),
+                                we were tasked to write and present a concept paper. Since our section was STEM specialized in IT-CoE,
+                                the topic had to be related to the industry. My group decided to propose a website for esports that
+                                would help managers and players form teams, organize events, and host tournaments.
+                            </p>
+
+                            <p>
+                                We created a mockup design of the website. It was not functional and was rushed due to the limited time
+                                given, but the project still allowed us to gain foundational knowledge in HTML and CSS. It also gave us a
+                                clearer idea of how digital platforms can be used to support the growing esports community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                <h3 class="info-title">Arduino Dollhouse</h3>
+                <h4 class="info-title">Arduino (C/C++)</h4>                    
+                    <div class="info-content">
+                        <div class="info-images">
+                            <img src="assets/projects/image copy 3.png" alt="arduino pic" class="info-image">
+                        </div>    
+                        <div class="info-text">
+                            <p>
+                                For our final project in General Physics 2, we created a dollhouse with a working lighting circuit.
+                                It was designed to demonstrate our understanding of series and parallel circuits as well as other
+                                electrical concepts we had studied. Since our section was STEM specialized in IT-CoE, the project
+                                also required Arduino integration to combine electronics with programming.
+                            </p>
+
+                            <p>
+                                We attended workshops where we learned the basics of using an Arduino. Our project included motion
+                                sensors, potentiometers, buttons, and LEDs, all connected to bring the dollhouse to life. The system
+                                was coded in the Arduino IDE using C++. This experience not only applied our lessons in physics but
+                                also gave us practical exposure to hardware and programming, making the project both challenging and
+                                rewarding.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="img-modal">
+                <img id="modal-img" src="" alt="Enlarged Image">
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-left">
+                <p>Edward Laurence C. Estrella</p>
+            </div>
+
+            <div class="footer-right">
+                <a href="https://www.facebook.com/edward.laurence.27" class="footer-icon">
+                <img src="assets/icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/edward.renzz" class="footer-icon">
+                <img src="assets/icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://discord.com/users/365061642045882371" class="footer-icon">
+                <img src="assets/icons/discord.png" alt="Discord">
+                </a>
+                <a href="#" class="footer-icon" onclick="copyToClipboard('edwardlaurence00@gmail.com')">
+                <img src="assets/icons/email.png" alt="Email">
+                </a>
+                <a href="#" class="footer-icon" onclick="copyToClipboard('+639563014892')">
+                <img src="assets/icons/phone.png" alt="Phone">
+                </a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
